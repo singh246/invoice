@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .invoice {
+            max-width: 1024px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            background: white;
+            border-radius: 4px;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 50px;
+            line-height: 48px;
+            margin-bottom: 14px;
+            color: red;
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        .title p {
+            /*line-height: 21px;*/
+            font-size: 20px;
+        }
+        
+        h4 {
+            font-size: 17px;
+            margin: 0;
+            padding: 10px 17px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            display: inline-block;
+            border: 1px solid #000;
+            border-radius: 4px;
+            font-weight: 500;
+            background: #a2bbdc;
+        }
+        
+        .invoice-bill {
+            width: 100%;
+            border: 1px solid #000;
+            border-top: 0;
+            border-right: 0;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .invoice-bill td {
+            border: 1px solid #000;
+            padding: 5px;
+            border-bottom: 0;
+            border-left: 0;
+        }
+
+        .invoice-bill .serial-no {
+            width: 70px;
+        }
+        
+        .invoice-bill .particulars {
+            width: 500px;
+        }
+        
+        .invoice-bill .amount {
+            width: 150px;
+        }
+        
+        .invoice-bill .particular-items {
+            padding: 5px 10px;
+            color: #000000;
+            font-weight: 500;
+        }
+        
+        .invoice-bill .amount-items {
+            padding: 5px 0;
+        }
+        
+        .invoice-bill p {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invoice_wrap">
+        <div class="invoice">
+            <table width="100%" cellspacing="0" cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0); width: 20%;">
+                            <div class="logo">
+                                <img src="https://gamcaonlineappointment.com/logo/logo.png" alt="Logo" width="100%" />
+                            </div>
+                        </td>
+                        <td style="text-align:right; color: black; border-bottom: 1px solid rgb(0, 0, 0); text-align: center;">
+                            <div class="title">
+                                <h1>Gmaca Medical</h1>
+                                <p style="margin-bottom: 10px;"> Pairu Wali Gali, Saran Garments Ke samne, Telibagh Lucknow <br>Utter Pradesh 226025
+                                </p>
+                                <p>Email: <span style="color: blue;">singhrahul5160@gmail.com</span>
+                                </p>
+                                <p>Web: <span style="color: blue;"><a href="https://gamcaonlineappointment.com/">www.gamcaonlineappointment.com</a></span>
+                                </p>
+                            </div>
+                        </td>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0);width: 20%;vertical-align: baseline;">
+                            <p style="margin-top: 13px;font-size: 20px;color: gray;"><b>Tel:</b> +917080483822</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: center; color:black; border-bottom: 1px solid rgb(0, 0, 0);">
+                            <h4>Pre medical Report</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="12" style="border-bottom: 1px solid rgb(0, 0, 0);">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 33.333%; text-align: center;">
+                                            <p><b>Medical Date: </b> 28-09-2021</p>
+                                        </td>
+                                        <td style="color: black;  text-align: center; width: 33.333%;">
+                                            <p><b>Expiry Date: </b> 08-10-2021</p>
+                                        </td>
+                                        <td style="width: 33.333%; text-align: center;">
+                                            <p><b>Serial No: </b> HMC 0255558875</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="12" style="padding: 0;">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="1" style="border-right: 1px solid rgb(0, 0, 0);"></td>
+                                        <td style="border-bottom: 1px solid rgb(0, 0, 0); width: 40%;">
+                                            <table width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Full Name: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;">Aman Singh</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Height: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Weight: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Sex: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Age: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Passport No.: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Position Applied for: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Recruting Agency: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td style="border-bottom: 1px solid rgb(0, 0, 0);vertical-align: baseline; width: 40%;">
+                                            <table width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Status: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Nationality: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;">Indian</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Place Of Issue: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;">Lucknow</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Traveling To: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Visa No.: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Visa Date: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p style="color:black;"><span style="font-weight: bold;">Religion: </span>
+                                                            </p>
+                                                        </td>
+                                                        <td>
+                                                            <p style="color:black;"></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" style="border-bottom: 1px solid rgb(0, 0, 0); border-right: 1px solid rgb(0, 0, 0);"></td>
+                                        <td colspan="11" style="border-bottom: 1px solid rgb(0, 0, 0);">GAMCA Medical is one of the leading online service providers in Lucknow, Ahmadabad, Bangalore, Calicut, Chennai, Cochin, Delhi, Goa, Hyderabad, Jaipur, Kolkata, Mangalore, Mumbai, Tirur, Trichy, Trivandrum. And Bahrain, Saudi Arabia, Qatar, Kuwait, Oman</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <table class="invoice-bill" width="100%" cellspacing="0" cellpadding="10">
+                                <tr>
+                                    <td class="serial-no">
+                                        <b>SL. No.</b>
+                                    </td>
+                                    <td class="particulars">
+                                        <b>Income</b>
+                                    </td>
+                                    <td class="amount">
+                                        <b>Amount</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>1</p>
+                                        <p>2</p>
+                                        <p>3</p>
+                                    </td>
+                                    <td>
+                                        <div class="particular-items">
+                                            <p>Active Bonus</p>
+                                            <p>Active Mentorship Bonus</p>
+                                            <p>Consumer Club</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="particular-items amount-items">
+                                            <p>$39</p>
+                                            <p>$39</p>
+                                            <p>$39</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <b>Total Amount</b>
+                                    </td>
+                                    <td>$99</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: left; color:black; border-bottom: 1px solid rgb(0, 0, 0); border-top: 1px solid rgb(0, 0, 0);">
+                            <h4>Deduction</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <table class="invoice-bill" width="100%" cellspacing="0" cellpadding="10">
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="particular-items">
+                                            <p>TDS</p>
+                                            <p>Admin charges</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="particular-items amount-items">
+                                            <p>$39</p>
+                                            <p>$39</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <b>Net Amount</b>
+                                    </td>
+                                    <td>$99</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: left; color:black;  border-top: 1px solid rgb(0, 0, 0);">
+                            <b>Rupees Three Thousand nine hundred Ninety Five only</b>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
